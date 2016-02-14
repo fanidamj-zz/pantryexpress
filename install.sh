@@ -4,7 +4,6 @@ set -x
 set -e
 if [ $PWD = "/home/ubuntu/workspace" ]; then
   rm -rf {,.[!.],..?}*
-  mkdir -p ~/workspace
 fi
 echo -e "\nHost github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
