@@ -1,11 +1,11 @@
 #/bin/bash
 # Die if any subcommand fails
 set -x
+set -e
 if [ $PWD = "/home/ubuntu/workspace" ]; then
-  rm -rf ~/workspace
+  rm -rf {,.[!.],..?}*
   mkdir -p ~/workspace
 fi
-set -e
 echo -e "\nHost github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
