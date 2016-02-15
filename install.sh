@@ -1,7 +1,6 @@
 #/bin/bash
 # Die if any subcommand fails
 set -x
-set -e
 if [ $PWD = "/home/ubuntu/workspace" ]; then
   rm -rf {,.[!.],..?}*
 fi
