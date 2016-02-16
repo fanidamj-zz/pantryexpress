@@ -10,7 +10,7 @@ echo "#/bin/bash" >> ~/.bash_profile
 echo "export NVM_DIR="$HOME/.nvm"" >> ~/.bash_profile
 echo "[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"" >> ~/.bash_profile
 sh ~/.bash_profile
-nvm use stable
+sh ~/.nvm/nvm.sh use stable
 npm install -g grunt-cli
 npm install -g serverless@0.0.15 
 npm install -g yo generator-angular@0.15.0 generator-karma
