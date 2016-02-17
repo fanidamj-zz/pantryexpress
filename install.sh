@@ -7,7 +7,7 @@ fi
 echo -e "\nHost github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 npm install -g grunt-cli
 npm install -g serverless@0.0.15 
-npm install -g yo generator-angular@0.15.0 generator-karma
+npm install -g yo bower generator-angular@0.15.0 generator-karma
 yes | bower
 sudo pip install awscli
 echo "Setting up pantryexpress-api"
